@@ -37,9 +37,9 @@ public class online implements Listener {
                             statement.setString(2, e.getPlayer().getName());
                             statement.executeUpdate();
                             statement.close();
-                            Bukkit.getPlayer(sender.getName()).kickPlayer(config.getString("messages.verfiy-title"));
+                            Bukkit.getPlayer(sender.getName()).kickPlayer(config.getString("messages.verify-title"));
                         }else {
-                            e.getPlayer().kickPlayer(config.getString("messages.not-exist"));
+                            Bukkit.getPlayer(sender.getName()).kickPlayer(config.getString("messages.not-exist"));
                             return;
                         }
                         statements.close();
