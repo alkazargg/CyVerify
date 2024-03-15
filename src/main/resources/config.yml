@@ -10,4 +10,5 @@ messages:
   not-exist: "§f§lCy§b§lVerify\n§c请先在主服务器输入/cy start 开始验证！"
   already-verified: "§f§lCy§b§lVerify\n§c你已经验证过了"
   verfiy-title: "§f§lCy§b§lVerify\n§6验证成功,你现在可以返回主服务器了！"
+  verified: ""
 command_success: "lp user %player% parent add zbuser"
