@@ -1,0 +1,17 @@
+main: airio.cyverify.main
+name: CyVerify
+version: 1.0
+description: a simple zb verify plugin
+commands:
+  zb:
+    aliases:
+      - zbverify
+    permission: zb.verify
+permissions:
+  zb.verify:
+    default: true
+    description: noob
+  zb.all:
+    default: op
+    description: all
+
