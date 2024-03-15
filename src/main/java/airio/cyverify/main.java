@@ -45,8 +45,8 @@ public class main extends JavaPlugin {
             getLogger().info("当前模式:" + ChatColor.YELLOW + "离线模式");
             getLogger().info("注册命令处理器...");
             Bukkit.getPluginManager().registerEvents(new offlineListener(), this);
-            if(Bukkit.getPluginCommand("zb") != null){
-                Bukkit.getPluginCommand("zb").setExecutor(new offline());
+            if(Bukkit.getPluginCommand("cy") != null){
+                Bukkit.getPluginCommand("cy").setExecutor(new offline());
             }
 
         }
