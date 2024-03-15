@@ -42,7 +42,7 @@ public class offline implements CommandExecutor {
                                 addnew.close();
                             }else{
                                 if(set.getBoolean("verified")){
-                                    sender.sendMessage("§f§lCy§b§lVerify §8» §c你已经验证过了！§c有问题请联系管理员解决");
+                                    sender.sendMessage(config.getString("messages.verified"));
                                     dispatcher((Player) sender);
                                 }else{
                                     Bukkit.getPlayer(sender.getName()).kickPlayer(config.getString("messages.start-verify-kick"));
