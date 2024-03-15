@@ -59,11 +59,11 @@ public class offline implements CommandExecutor {
                 return true;
             }
             case "reload":{
-                if(sender.hasPermission("zb.all")){
+                if(sender.hasPermission("cy.admin")){
                     config = instance.getConfig();
                     sender.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY +"§a成功重载!");
                 }else{
-                    sender.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + "§c缺少权限!");
+                    sender.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + "§c你没有权限去这样做！");
                 }
                 return true;
             }
@@ -79,7 +79,6 @@ public class offline implements CommandExecutor {
         p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy start §f- 开始验证");
         if(p.hasPermission("cy.all")){
             p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy reload §f- 重载配置文件");
-            p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy test §f- 爱来自Cyttt");
         }
         p.sendMessage("§f");
         p.sendMessage("§f§n--------------------------------------------");
