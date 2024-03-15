@@ -3,9 +3,10 @@ name: CyVerify
 version: 1.0
 description: a simple zb verify plugin
 commands:
-  zb:
+  cy:
     aliases:
-      - zbverify
+      - zb
+      - love
     permission: zb.verify
 permissions:
   zb.verify:
