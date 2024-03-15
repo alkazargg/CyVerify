@@ -7,12 +7,12 @@ commands:
     aliases:
       - zb
       - love
-    permission: zb.verify
+    permission: cy.verify
 permissions:
-  zb.verify:
+  cy.verify:
     default: true
     description: noob
-  zb.all:
+  cy.all:
     default: op
     description: all
 
