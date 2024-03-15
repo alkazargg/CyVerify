@@ -6,8 +6,8 @@ mysql:
   port: 3306
 messages:
   start-verify-kick: "§f§lCy§b§lVerify\n§e请使用§c正版账号§e的方式登录§6zb.cyttt.cn§e完成验证！"
-  verfiy-success: "§2✔ §a正版验证成功 感谢你对正版的支持"
-  not-exist: "§c请先在主服务器输入/cy start 开始验证！"
-  already-verified: "§c你已经验证过了"
+  verfiy-success: "§f§lCy§b§lVerify\n§2✔ §a正版验证成功 感谢你对正版的支持"
+  not-exist: "§f§lCy§b§lVerify\n§c请先在主服务器输入/cy start 开始验证！"
+  already-verified: "§f§lCy§b§lVerify\n§c你已经验证过了"
   verfiy-title: "§f§lCy§b§lVerify\n§6验证成功,你现在可以返回主服务器了！"
 command_success: "lp user %player% parent add zbuser"
