@@ -35,7 +35,7 @@ public class offline implements CommandExecutor {
                             statement.setString(1,sender.getName());
                             ResultSet set = statement.executeQuery();
                             if(!set.next()){
-                                PreparedStatement addnew = connection.prepareStatement("INSERT INTO `zbcheck`(`uuid`, `verified`,`locked`, `time`) VALUES (?,'0','0','0')");
+                                PreparedStatement addnew = connection.prepareStatement("INSERT INTO `cyverify`(`uuid`, `verified`,`locked`, `time`) VALUES (?,'0','0','0')");
                                 addnew.setString(1,sender.getName());
                                 addnew.executeUpdate();
                                 Bukkit.getPlayer(sender.getName()).kickPlayer(config.getString("messages.start-verify-kick"));
