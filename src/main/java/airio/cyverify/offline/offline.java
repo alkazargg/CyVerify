@@ -31,7 +31,7 @@ public class offline implements CommandExecutor {
                     public void run() {
                         try {
                             Connection connection = DriverManager.getConnection(jdbc_url, config.getString("mysql.username"),config.getString("mysql.password"));
-                            PreparedStatement statement = connection.prepareStatement("SELECT * FROM `zbcheck` WHERE uuid=?");
+                            PreparedStatement statement = connection.prepareStatement("SELECT * FROM `cyverify` WHERE uuid=?");
                             statement.setString(1,sender.getName());
                             ResultSet set = statement.executeQuery();
                             if(!set.next()){
@@ -42,7 +42,7 @@ public class offline implements CommandExecutor {
                                 addnew.close();
                             }else{
                                 if(set.getBoolean("verified")){
-                                    sender.sendMessage("§f§lCy§b§lVerify/n§c你已经验证过了！/n§c有问题请联系管理员解决");
+                                    sender.sendMessage("§f§lCy§b§lVerify §8» §c你已经验证过了！§c有问题请联系管理员解决");
                                     dispatcher((Player) sender);
                                 }else{
                                     Bukkit.getPlayer(sender.getName()).kickPlayer(config.getString("messages.start-verify-kick"));
