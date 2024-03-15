@@ -17,7 +17,7 @@ public class offlineListener implements Listener {
             public void run() {
                 try {
                     Connection connection = DriverManager.getConnection(jdbc_url, config.getString("mysql.username"),config.getString("mysql.password"));
-                    PreparedStatement statements = connection.prepareStatement("SELECT * FROM `zbcheck` WHERE uuid=?");
+                    PreparedStatement statements = connection.prepareStatement("SELECT * FROM `cyverify` WHERE uuid=?");
                     statements.setString(1,e.getPlayer().getName());
                     ResultSet set = statements.executeQuery();
                     if(!set.next()){
@@ -31,7 +31,7 @@ public class offlineListener implements Listener {
                         if(set.getBoolean("verified")){
                             offline.dispatcher(e.getPlayer());
                             e.getPlayer().sendMessage(config.getString("messages.verify-success"));
-                            PreparedStatement statement = connection.prepareStatement("UPDATE `zbcheck` SET `locked`='1' WHERE `uuid`=?");
+                            PreparedStatement statement = connection.prepareStatement("UPDATE `cyverify` SET `locked`='1' WHERE `uuid`=?");
                             statement.setString(1, e.getPlayer().getName());
                             statement.executeUpdate();
                             statement.close();
