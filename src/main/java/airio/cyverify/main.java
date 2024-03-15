@@ -28,7 +28,7 @@ public class main extends JavaPlugin {
         jdbc_url = "jdbc:mysql://"+config.getString("mysql.ip")+":"+config.getString("mysql.port")+"/"+config.getString("mysql.dbname");
         try {
             Connection connection = DriverManager.getConnection(jdbc_url, config.getString("mysql.username"),config.getString("mysql.password"));
-            PreparedStatement statement = connection.prepareStatement("CREATE TABLE IF NOT EXISTS `zbcheck` ( `uuid` MEDIUMTEXT NOT NULL , `verified` BOOLEAN NOT NULL , `locked` BOOLEAN NOT NULL , `time` BIGINT NOT NULL ) ENGINE = InnoDB;");
+            PreparedStatement statement = connection.prepareStatement("CREATE TABLE IF NOT EXISTS `cyverify` ( `uuid` MEDIUMTEXT NOT NULL , `verified` BOOLEAN NOT NULL , `locked` BOOLEAN NOT NULL , `time` BIGINT NOT NULL ) ENGINE = InnoDB;");
             statement.executeUpdate();
             statement.close();
             connection.close();
