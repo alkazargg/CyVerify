@@ -74,14 +74,14 @@ public class offline implements CommandExecutor {
         Bukkit.dispatchCommand(Bukkit.getConsoleSender(),config.getString("command_success").replace("%player%",p.getName()));
     }
     public void sendhelp(Player p){
-        p.sendMessage("§f§n--------------------------------------------");
+        p.sendMessage("§f§m--------------------------------------------");
         p.sendMessage("§f");
         p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy start §f- 开始验证");
         if(p.hasPermission("cy.all")){
             p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy reload §f- 重载配置文件");
         }
         p.sendMessage("§f");
-        p.sendMessage("§f§n--------------------------------------------");
+        p.sendMessage("§f§m--------------------------------------------");
     }
 
 }
