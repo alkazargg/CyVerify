@@ -63,7 +63,7 @@ public class offline implements CommandExecutor {
                     config = instance.getConfig();
                     sender.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY +"§a成功重载");
                 }else{
-                    sender.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + "§c缺少权限");
+                    sender.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + "§c缺少权限!");
                 }
                 return true;
             }
