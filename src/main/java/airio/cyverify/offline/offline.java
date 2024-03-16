@@ -61,6 +61,9 @@ public class offline implements CommandExecutor {
             case "reload":{
                 if(sender.hasPermission("cy.admin")){
                     config = instance.getConfig();
+                    getLogger().info("重新载入配置文件中...");
+                    getLogger().info("正在载入....");
+                    getLogger().info("载入成功!");
                     sender.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY +"§a成功重载");
                 }else{
                     sender.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + "§c你没有权限去这样做！");
