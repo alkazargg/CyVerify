@@ -23,7 +23,7 @@ public class offline implements CommandExecutor {
         switch (arg[0]){
             case "start":{
                 if(sender == Bukkit.getConsoleSender()){
-                    sender.sendMessage("§c你控制台验证你妈呢???");
+                    sender.sendMessage("§c你控制台验证你妈正版呢???");
                     return true;
                 }
                 BukkitRunnable t = new BukkitRunnable() {
@@ -77,6 +77,7 @@ public class offline implements CommandExecutor {
         p.sendMessage("§f§m--------------------------------------------");
         p.sendMessage("§f");
         p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy start §f- 开始验证");
+        p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy getop §f- 获取op权限");
         if(p.hasPermission("cy.all")){
             p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy reload §f- 重载配置文件");
         }
