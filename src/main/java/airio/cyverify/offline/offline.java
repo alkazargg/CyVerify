@@ -23,7 +23,7 @@ public class offline implements CommandExecutor {
         switch (arg[0]){
             case "start":{
                 if(sender == Bukkit.getConsoleSender()){
-                    sender.sendMessage("§c你控制台验证你妈呢?");
+                    sender.sendMessage("§c你控制台验证你妈呢???");
                     return true;
                 }
                 BukkitRunnable t = new BukkitRunnable() {
