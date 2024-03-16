@@ -6,7 +6,7 @@
 
     <groupId>airio.cyverify</groupId>
     <artifactId>CyVerfiy</artifactId>
-    <version>1.11</version>
+    <version>1.11-Bukkit</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
