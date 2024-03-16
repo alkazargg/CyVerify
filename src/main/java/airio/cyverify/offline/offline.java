@@ -79,9 +79,9 @@ public class offline implements CommandExecutor {
     public void sendhelp(Player p){
         p.sendMessage("§f§m--------------------------------------------");
         p.sendMessage("§f");
-        p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy start §f- 开始验证");
+        p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy start §f- 开始验证.");
         if(p.hasPermission("cy.all")){
-            p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy reload §f- 重载配置文件");
+            p.sendMessage(ChatColor.WHITE + "Cy" + ChatColor.AQUA + "Verify" + ChatColor.DARK_GRAY + " » " + ChatColor.GRAY + "/cy reload §f- 重载配置文件.");
         }
         p.sendMessage("§f");
         p.sendMessage("§f§m--------------------------------------------");
