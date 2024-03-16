@@ -1,9 +1,32 @@
+############################################################
+#    _________                                             #
+#   |            |     |      |        |       |           #
+#   |            |_____|   ___|___  ___|___ ___|___        #
+#   |                  |      |        |       |           #
+#   |_________         |      |        |       |           #
+#                \____/       |_/      |_/     |_/         #
+#                                                          #
+############################################################
+
+
+#数据库连接
+#此项为必填项
+#仅支持MySQL
+#配置:
+#ip: 127.0.0.1
+#端口: 3306 (推荐)
+
 mysql:
   username: root
   password: admin
   dbname: cyzb
   ip: 127.0.0.1
   port: 3306
+
+  #自定义message,你可以在下面自定义你的消息
+  #小提醒：当前仅支持使用\n进行换行
+
+  
 messages:
   start-verify-kick: "§f§lCy§b§lVerify\n§e请使用§c正版账号§e的方式登录§6zb.cyttt.cn§e完成验证！\n§7\n§7如果出现<远程主机关闭现有的连接>或其他非正常断开情况\n§7不用担心,不用重新进入,直接返回主服领取奖励!"
   verfiy-success: "§f§lCy§b§lVerify\n§2✔ §a正版验证成功 感谢你对正版的支持"
@@ -11,4 +34,21 @@ messages:
   already-verified: "§f§lCy§b§lVerify\n§c你已经验证过了"
   verfiy-title: "§f§lCy§b§lVerify\n§6验证成功,你现在可以返回主服务器了！"
   verified: "§f§lCy§b§lVerify §8» §c你已经验证过了,有问题请联系管理员解决!"
+
+
+  #指令
+  #在command_success处填写指令,后续会添加更多写指令的地方
+  #以后可能会添加:
+  #command:
+  #   demo:"****"
+  #   demo1:"****"
+  #   demo2:"****"
+  #   demo3:"****"
+  #   demo4:"****"  
+  #当前为1.1版本,计划在1.2或更高版本推出
+
 command_success: "lp user %player% parent add zbuser"
+
+
+
+#有问题请投放至邮箱:891289735@qq.com
